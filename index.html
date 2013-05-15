@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>37 Signals re-creation</title>
+    <link rel="icon" type="image/ico" href="img/favicon.ico" />
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
@@ -10,7 +11,7 @@
     <div class="navigation">
         <nav>
             <ul>
-                <li><a href="#">Happy Thursday.</a></li>
+                <li id="day"></li>
                 <li class="info" id="sign-in"><a href="#">Sign in</a></li>
                 <li class="info"><a href="#">System status</a></li>
                 <li class="info"><a href="#">Follow us on Twitter</a></li>
@@ -19,13 +20,27 @@
             </ul>
         </nav>
     </div>
+    
     <div class="main-container">
         <img src="img/37.png" alt="logo">
         <div id="products">
             <div class="title">
                 <h1>Making collaboration productive and enjoyable for people every day.</h1>
                 <h3>Frustration-free web-based apps for collaboration, sharing information, and making descisions.</h3>
+                <div class="product bc">
+                    <h1>Basecamp is the project management tool you wish you had on your last project.</h1>
+                    <p>Are you still managing projects with email? Are you still using Excel for your to-do lists? It’s time to upgrade to Basecamp. Manage projects and collaborate with your team and clients the modern way.</p>
+                </div>
+                <div class="product hr">
+                    <h1>Highrise remembers the important things about people you’d normally forget.</h1>
+                    <p>Keep a permanent record of people you do business with. Know who you talked to, when you talked to them, what was said, and when to follow up next. Over 20,000,000 contacts are tracked using Highrise.</p>
+                </div>
+                <div class="product cf">
+                     <h1>From near or far, Campfire helps teams work together over the web in real-time.</h1>
+                     <p>Share ideas, discussions, concepts, images, code samples, videos, mockups, and documents in a real-time private chat room. It’s game changing. We couldn’t run our own business without Campfire.</p>
+                </div>
             </div>
+
             <ul>
                 <li class="product-info" id="basecamp">
                     <img src="img/basecamp.png" alt="basecamp logo">
@@ -46,7 +61,11 @@
                     <span class="description"><p>Group chat for your business.</p></span>
                 </li>
             </ul>
+            <img src="img/stars.png" alt="">
         </div>
+
     </div>
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>

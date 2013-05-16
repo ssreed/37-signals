@@ -21,7 +21,7 @@ $(function(){
    
     d = new Date();
     today = d.getDay();
-    days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
    
     $('#day').append("<a href=\"#\">Happy " + days[today] + ".</a>");
 });

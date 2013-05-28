@@ -1,19 +1,22 @@
-$(function(){  
-    $('#basecamp').hover(function(){
+$(function(){
+
+    var toggleInfo = function(){
         $('.title > h1').toggle();
         $('.title > h3').toggle();
+    };
+
+    $('#basecamp').hover(function(){
+        toggleInfo();
         $('.bc').toggle();
     });
 
     $('#highrise').hover(function(){
-        $('.title > h1').toggle();
-        $('.title > h3').toggle();
+        toggleInfo();
         $('.hr').toggle();
     });
 
     $('#campfire').hover(function(){
-        $('.title > h1').toggle();
-        $('.title > h3').toggle();
+        toggleInfo();
         $('.cf').toggle();
     });
 
@@ -23,5 +26,5 @@ $(function(){
     today = d.getDay();
     days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
    
-    $('#day').append("<a href=\"#\">Happy " + days[today] + ".</a>");
+    $('#day').append("<span>Happy " + days[today] + ".</span>"); 
 });
